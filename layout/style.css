@@ -83,3 +83,23 @@ h1{
    padding: 0;
    
 }
+
+/* ALINHAMENTO VERTICAL *//* ALINHAMENTO VERTICAL */
+/* ALINHAMENTO VERTICAL *//* ALINHAMENTO VERTICAL */
+
+#vertical{
+    height: 300px;
+    border-color: coral ;
+}
+
+#vertical .row{
+    height: 100%;
+    border-color: blue ;
+}
+
+#vertical .col-6,.col-4,.col-3{
+    height: 150px;
+}
+
+
+

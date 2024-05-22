@@ -97,8 +97,8 @@ h1{
     border-color: blue ;
 }
 
-#vertical .col-6,.col-4,.col-3{
-    height: 150px;
+#vertical .col-6,.col-4,.col-3,.col-12{
+    height: 80px;
 }
 
 

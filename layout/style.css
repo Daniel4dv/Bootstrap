@@ -76,11 +76,11 @@ h1{
     padding:10px;
     margin: 0;
 }
-.col,.col-4,.col-2,.col-10,.col-8,.col-6,.col-3,.col-1{
+.col,.col-4,.col-2,.col-10,.col-6,.col-8,.col-3,.col-1{
     border:5px dashed rgb(0, 128, 9);
    height: 100%;
-   margin: 0;
-   padding: 0;
+   margin: 0;  /*Incompativel com gutters*/
+   
    
 }
 
@@ -100,6 +100,42 @@ h1{
 #vertical .col-6,.col-4,.col-3,.col-12{
     height: 80px;
 }
+
+
+#espacamento{ /*OFFSET*/
+    height: 300px;
+    height: auto;
+}
+
+#espacamento .row{  /*OFFSET*/
+    height: 100%;
+}
+
+.col-md-3{
+    height: 80px;
+    border: 5px dashed red;
+}
+
+
+
+
+#gutter .row{
+    height: 300px;
+    border-color: gold;
+ 
+}
+
+#gutter .col-6{
+    margin: auto; /*Incompativel com gutters*/
+    height: 80px; 
+    
+}
+
+.row p {
+
+    border: 2px solid black;
+}
+
 
 
 

@@ -1,0 +1,38 @@
+.col{
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding:15px;
+    margin: 15px;
+}
+
+.col i{
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+
+.bell{
+    border-color: chocolate;
+}
+
+.bell i{
+    color: chocolate;
+}
+
+.fire{
+    border-color: red;
+}
+
+.fire i{
+    color: red;
+}
+
+.sun{
+    border-color: gold;
+}
+
+.sun i{
+    color: gold;
+}

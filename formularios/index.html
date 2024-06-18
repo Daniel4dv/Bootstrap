@@ -15,27 +15,107 @@
 
    <div class="col-4 m-4">
         <h2>Registro</h2>
+
         <form action="" method="post">
 
-           
-               <div class=" mb-4">
-                    <label class="form-label" for="nome">Nome:</label>
-                    <input class="form-control" type="text" name="nome" id="nome" placeholder="Insira seu nome">
-               </div>
-               <div class=" mb-4">
-                    <label class="form-label" for="email">Email:</label>
-                    <input class="form-control" type="email" name="email" id="email" placeholder="Insira seu email">
-               </div>
-               
-               <div class=" mb-4">
-                    <label class="form-label" for="senha">Senha:</label>
-                    <input class="form-control" type="password" name="senha" id="senha" placeholder="Insira sua senha">
-               </div>
-               <input  class="btn btn-primary" type="submit" value="Cadastrar">
-               <button class="btn btn-primary" type="submit">Cadastrar(button)</button>
+           <fieldset disabled>
+                
+                    <div class=" mb-4">
+                         <label class="form-label" for="nome">Nome:</label>
+                         <input class="form-control" type="text" name="nome" id="nome" placeholder="Insira seu nome">
+                    </div>
+                    <div class=" mb-4">
+                         <label class="form-label" for="email">Email:</label>
+                         <input class="form-control" type="email" name="email" id="email" placeholder="Insira seu email">
+                    </div>
+                
+                    <div class=" mb-4">
+                         <label class="form-label" for="senha">Senha:</label>
+                         <input class="form-control" type="password" name="senha" id="senha" placeholder="Insira sua senha">
+                    </div>
+                    <input  class="btn btn-primary" type="submit" value="Cadastrar">
+                    <button class="btn btn-primary" type="submit">Cadastrar(button)</button>
+           </fieldset>
         
 
         </form>
+
+   </div>
+
+   <div class="container col-12 justify-content-center">
+        <h1>FORM-CONTROL</h1>
+         <form action="">
+          <label for="">Label:</label>
+          <input class="form-control" type="text" name="nome" id="nome" placeholder="input com form-control"> <br>
+          
+          <div class="col-6 m-4">
+               <label for="">Label:</label>
+               <input class="form-control form-control-sm" type="text" name="nome" id="nome" placeholder="input com form-control-sm">
+          </div> <br> <br>
+
+          <label for="">Label:</label>
+          <input class="form-control-lg" type="text" name="nome" id="nome" placeholder="input com form-control-lg">
+
+          <div class="col-6 m-4">
+               <label for="content" class="form-label">Conteúdo:</label>
+               <textarea class="form-control" rows="5" name="" id=""></textarea>
+          </div>
+
+         </form>
+
+         <h1>READ-ONLY</h1>
+
+         <form action="">
+          <label for="email">Email:</label>
+          <input readonly class="form-control" type="email" value="cascadebala@gmail.com">
+               <br><br>
+               <label for="email2">Email 2:</label>
+               <input readonly class="form-control-plaintext" type="email" value="cascadebala@gmail.com">
+          </form>
+          <br><br>
+
+
+         <div class="col-6 mb-4">
+              <h1>ARQUIVOS</h1>
+              <div class="mb-4">
+                   <label for="foto">Arquivo unico:</label>
+                   <input class="form-control" type="file">
+              </div>
+              <div class="mb-4">
+                   <label for="fotos">Múltiplos arquivos:</label>
+                   <input class="form-control" type="file" multiple>
+              </div>
+              <div class="mb-4">
+                   <label for="fotos">Múltiplos arquivos:</label>
+                   <input class="form-control" type="file" disabled>
+              </div>
+         </div>
+
+         <div class="col-6 mb-4">
+          <h1>Datalist</h1>
+
+          <form action="">
+               <div class="mb-4">
+                    <label class="form-label" for="estados">Estado:</label>
+                    <input type="datalist" class="form-control" list="dloptions" placeholder="Busque seu Estado..." id="estados">
+                    <datalist id="dloptions">  
+                         <option value="Bahia">
+                         <option value="Minas Gerais">
+                         <option value="Rio de Janeiro">
+                         <option value="São Paulo">
+                    </datalist>
+               </div>
+          </form>
+
+
+         </div>
+
+
+
+
+
+
+
 
    </div>
     

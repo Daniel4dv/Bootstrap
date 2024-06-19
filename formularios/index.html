@@ -94,30 +94,203 @@
          <div class="col-6 mb-4">
           <h1>Datalist</h1>
 
-          <form action="">
-               <div class="mb-4">
+               <form action="">
+                    <div class="mb-4">
                     <label class="form-label" for="estados">Estado:</label>
                     <input type="datalist" class="form-control" list="dloptions" placeholder="Busque seu Estado..." id="estados">
-                    <datalist id="dloptions">  
+                         <datalist id="dloptions">  
                          <option value="Bahia">
                          <option value="Minas Gerais">
                          <option value="Rio de Janeiro">
                          <option value="São Paulo">
-                    </datalist>
-               </div>
-          </form>
-
-
+                         </datalist>
+                    </div>
+               </form>
          </div>
 
+         <h1 class="display-1">OUTROS SELETORES</h1>
+         <br><br>
+
+         <div class="col-md-6 mb-4">
+
+          <h2>Seletor de cor:</h2> <br>
+               <div class="mb-4">
+                    <form action="">
+                         <label for="">Selecione a cor:</label>
+                         <input class="form-control form-control-color" type="color" title="Escolha uma cor">
+                    </div>
+                    
+               
+
+               <!-- SELECT  -->
+          <h2>Select:</h2>
+               <div class=" mb-4">
+
+                    <label class="form-label" for="op">Genero:</label>
+                    <select class="form-select" name="op" id="op">
+                         <option Selected>Selecione uma Opção</option>
+                         <option value="">Masculino</option>
+                         <option value="">Feminino</option>
+                         <option value="">Outro</option>
+                    </select> <br>
+                    
+                    <label class="form-label" for="ops">Generos multiple:</label>
+                    <select class="form-select" multiple>
+                         <option value="">Masculino</option>
+                         <option value="">Feminino</option>
+                         <option value="">Outro</option>
+                    </select>
+               </div>
+
+               <!-- CHECKBOX E RADIO -->
+          <h2>Checkbox</h2>
+
+<div class="mb-4">
+          <h3 class="h4">Marque as opções</h3>
+
+               <div>
+
+                    <input class="form-check-input" type="checkbox" id="pvc">
+                    <label class="form-check-label" for="pvc">Aceitar os termos de uso</label>
+               </div>
+
+               <div >
+                         <input class="form-check-input" type="checkbox" id="email" checked>
+                         <label class="form-check-label" for="email">Quero receber emails de propaganda</label>
+               </div>
+               
+               <div class="mb-4">
+                         <input class="form-check-input" type="checkbox" id="trol" disabled>
+                         <label class="form-check-label" for="trol">Essa vc n vai marcar kkk</label>
+               </div>
+
+               <div class="mb-4">
+                    <h2>Qual vc quer?</h2>
+
+                    <div class="form-check">
+                         <input class="form-check-input" name="ops" type="radio" checked>
+                         <label for="s">Sim</label>
+                    </div>
+                    
+                    <div class="form-check">
+                         <input class="form-check-input" name="ops" type="radio">
+                         <label for="n">Não</label>
+                    </div>
+               </div>
+</div>
+
+          <!-- SWITCH      -->
+     <div class="mb-4">
+          <h2>Modo SWITCH / BTS</h2>
+          <div class="form-check form-switch">
+               <input type="checkbox" class="form-check-input" id="flex-switch">
+               <label for="flex-switch" class="form-label">Modo noturno</label>
+          </div>
+     </div>
+
+     <!-- RANGE -->
+
+     <div class="mb-4">
+
+          <div>
+               <h2>RANGE</h2>
+               <label for="nota">Qual a sua avaliação?</label>
+               <input type="range" class="form-range" min="0" max="5">
+          </div>
+     </div>
+
+     <!--INPUTS GROUP-->
+
+     <div class="input-group mb-4">
+          <span class="input-group-text" id="basic-addon">@</span>
+          <input type="email" class="form-control" placeholder="Digite seu email">
+     </div>
+
+     <label for="sal">Quanto você pretende Receber?</label>
+     <div class="input-group mb-4">
+          <br>
+          <span class="input-group-text" id="basic-addon">R$</span>
+          <input type="number" class="form-control" placeholder="Digite o valor" id="sal">
+     </div>
+
+
+     <!-- LABEL FLUTUANTE -->
+      <h2>Label flutuante:</h2>
+
+      <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email" placeholder="Insira seu email">
+          <label for="email">Email:</label>
+      </div>
+      
+      <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="senha" placeholder="Insira sua senha">
+          <label for="senha">Senha:</label>
+      </div>
+     </form>
+</div> <!--col 6-->
+</div>
+<hr>
+
+      <!-- FORM COM LAYOUT -->
+     
+     <div class="container col-6 mb-4">
+          <h2>Layout no formulario:</h2>
+          <form class="row g-3">
+               <div class="col-md-6">
+                    <label  for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Insira seu nome">
+                    
+               </div>
+
+               <div class="col-md-6">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" class="form-control" id="sobrenome" placeholder="Insira seu sobrenome">
+               </div>
+               <div class="col-md-5">
+                    <label for="cep">CEP:</label>
+                    <input type="text" class="form-control" id="CEP" placeholder="Insira seu CEP">
+               </div>
+               <div class="col-md-9">
+                    <label for="rua">Rua</label>
+                    <input class="form-control" type="text" name="rua" id="rua" placeholder="Insira sua rua">
+               </div>
+               <div class="col-md-3">
+                    <label for="numero">Número:</label>
+                    <input class="form-control" type="text" name="numero" id="numero" placeholder="Nº">
+               </div>
+               <div class="col-md-6">
+                    <label for="usuario">Usuário:</label>
+                    <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Insira seu usuario">
+               </div>
+               <div class="col-md-6">
+                    <label for="senha">Senha:</label>
+                    <input class="form-control" type="password" name="senha" id="senha" placeholder="Insira sua senha">
+               </div>
+
+               <div class="col-12">
+                    <div class="form-check">
+                         <input type="checkbox" name="op" id="op" class="form-check-input">
+                         <label for="op">Aceitar termos de uso</label>
+                    </div>
+               </div>
+
+               <div class="col-md-6">
+                    <input style="width:100%" class="btn btn-success" type="submit" value="Cadastrar">     
+               </div>
+               <div class="col-md-6">
+                    <input style="width:100%" class="btn btn-danger" type="reset" value="Limpar">
+               </div>
+          </form>
+     </div>
+     <hr>
+
+     <!-- VALIDAÇÃO -->
+      <h2>Validação</h2>
 
 
 
 
-
-
-
-   </div>
-    
+         
+   
 </body>
 </html>
